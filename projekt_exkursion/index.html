@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>p5.js Starter Project</title>
+    <title>nature of code</title>
     <style>
-    html,
     body {
-        height: 100%;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 20px;
     }
 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    #sketch {
+      margin-top: 20px;
     }
-    main {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-end;
+    img {
+      width: 400px; /* Breite des Canvas */
+      height: 400px; /* Höhe des Canvas */
+      display: block;
+      margin: 20px auto; /* Zentriert mit Abstand */
     }
     </style>
 </head>
 <body>
+    <h1>nature of code</h1>
+    <p> Im Rahmen unserer Exkursion auf Amrum sollten wir in der Natur nach Strukturen oder Abläufen suchen, die wir in code übersetzen wollen.</p>
+    <p> Ich hab mich dazu entschieden, mich mit der Struktur von diesen Pflanzen auf der Salzwiese zu befassen.</p>
 <main>
+    
+    <img src="assets/images/pflanze.jpg" alt="Bild Salzwiese">
+    <p> Dabei ist mir die Ballung der Pflanzen aufgefallen. Sie sind sehr gedrängt auf der Wiese und werden scheinbar durch das Wasser eingegrenzt.</p>
+    <p> Dieses Phänomen wollte ich in meinem code mikthilfe von Partiklen und einer Barriere aufgreifen. Wie wird eine sich bewegende Masse begrenzt und welche Strukturen entstehen dadurch?</p>
+    <p> Dazu habe ich zunächst ein paar Skizzen angelegt (Hyperbel)</p>
     <div id="sketch"></div>
-    <a href="index.js">souce code</a>
+    <a href="index.js">source code</a>
     </main>
     <script src="./modules/p5/lib/p5.min.js"></script>
     <!-- <script src="./modules/p5/lib/addons/p5.sound.min.js"></script> -->
