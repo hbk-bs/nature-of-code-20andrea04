@@ -14,7 +14,6 @@
       padding: 20px;
     }
 
-
     #sketch {
       margin-top: 20px;
     }
@@ -24,6 +23,18 @@
       display: block;
       margin: 20px auto; /* Zentriert mit Abstand */
     }
+
+    .image-row {
+            display: flex;
+            justify-content: center; /* Zentriere die Bilder horizontal */
+            gap: 10px; /* Abstand zwischen den Bildern */
+            margin: 20px 0; /* Abstand über und unter der Bildreihe */
+        }
+        .image-row img {
+            width: 120px; /* Breite der kleinen Bilder */
+            height: auto; /* Automatische Höhe, um das Seitenverhältnis zu bewahren */
+        }
+
     </style>
 </head>
 <body>
@@ -36,6 +47,13 @@
     <p> Dabei ist mir die Ballung der Pflanzen aufgefallen. Sie sind sehr gedrängt auf der Wiese und werden scheinbar durch das Wasser eingegrenzt.</p>
     <p> Dieses Phänomen wollte ich in meinem code mikthilfe von Partiklen und einer Barriere aufgreifen. Wie wird eine sich bewegende Masse begrenzt und welche Strukturen entstehen dadurch?</p>
     <p> Dazu habe ich zunächst ein paar Skizzen angelegt (Hyperbel)</p>
+
+    <div class="image-row">
+        <img src="assets/images/muster_1.jpg" alt="Skizze 1">
+        <img src="assets/images/muster_2.jpg" alt="Skizze 2">
+        <img src="assets/images/muster_3.jpg" alt="Skizze 3">
+    </div>
+
     <div id="sketch"></div>
     <a href="index.js">source code</a>
     </main>
