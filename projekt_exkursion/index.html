@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nature of code</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #sketch {
+      margin-top: 20px;
+    }
+    img {
+      width: 400px; /* Breite des Canvas */
+      height: 400px; /* Höhe des Canvas */
+      display: block;
+      margin: 20px auto; /* Zentriert mit Abstand */
+    }
+
+    .image-row {
+            display: flex;
+            justify-content: center; /* Zentriere die Bilder horizontal */
+            gap: 10px; /* Abstand zwischen den Bildern */
+            margin: 20px 0; /* Abstand über und unter der Bildreihe */
+        }
+        .image-row img {
+            width: 120px; /* Breite der kleinen Bilder */
+            height: auto; /* Automatische Höhe, um das Seitenverhältnis zu bewahren */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>nature of code</h1>
+    <p> Im Rahmen unserer Exkursion auf Amrum sollten wir in der Natur nach Strukturen oder Abläufen suchen, die wir in code übersetzen wollen.</p>
+    <p> Ich hab mich dazu entschieden, mich mit der Struktur von diesen Pflanzen auf der Salzwiese zu befassen.</p>
+<main>
+    
+    <img src="assets/images/pflanze.jpg" alt="Bild Salzwiese">
+    <p> Dabei ist mir die Ballung der Pflanzen aufgefallen. Sie sind sehr gedrängt auf der Wiese und werden scheinbar durch das Wasser eingegrenzt.</p>
+    <p> Dieses Phänomen wollte ich in meinem code mikthilfe von Partiklen und einer Barriere aufgreifen. Wie wird eine sich bewegende Masse begrenzt und welche Strukturen entstehen dadurch?</p>
+    <p> Dazu habe ich zunächst ein paar Skizzen angelegt.</p>
+
+    <div class="image-row">
+        <img src="assets/images/muster_1.jpg" alt="Skizze 1">
+        <img src="assets/images/muster_2.jpg" alt="Skizze 2">
+        <img src="assets/images/muster_3.jpg" alt="Skizze 3">
+    </div>
+
+    <p> Die Partikel bewegen sich entlang gekrümmter Bahnen.
+        Die markante "Öffnung" oder "Kurve", die sich ergibt, erinnert stark an den typischen Verlauf einer Hyperbel (zwei spiegelbildliche Äste, die sich von einem Zentrum wegkrümmen).
+        </p>
+    <img src="assets/images/hyperbel.jpg" alt="Hyperbel">
+        <p> In einem physikalischen Partikelsystem mit einer Barriere entstehen bei der Streuung oft Bahnmuster, die sich mathematisch mit Hyperbeln oder ähnlichen Kurven beschreiben lassen.
+            Auch in der Natur (z. B. bei Lichtbrechung, Gravitation, etc.) entstehen hyperbelähnliche Muster, wenn eine Kraft auf viele Einzelobjekte wirkt.</p>
+
+            <p> Eine bewegte Masse (Partikel) trifft auf eine Barriere und wird durch eine darunterliegende mathematische Struktur (Hyperbel) beeinflusst. In meinem Code nutze ich so eine Kurvenlogik, um organisch wirkende, aber mathematisch fundierte Bewegungen zu erzeugen.</p>
+
+    <div id="sketch"></div>
+    <a href="index.js">source code</a>
+    </main>
+    <script src="./modules/p5/lib/p5.min.js"></script>
+    <!-- <script src="./modules/p5/lib/addons/p5.sound.min.js"></script> -->
+   <!-- <script src="./modules/@ff6347/p5-easing/dist/p5.easing.min.js"></script> -->
+
+    <script src="index.js"></script>
+</body>
+</html>
